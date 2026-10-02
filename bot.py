@@ -1,9 +1,22 @@
 import html
+
 import logging
 import os
 import re
 import sys
+from flask import Flask
+import threading
 
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "OK"
+
+def run_web():
+    app.run(host='0.0.0.0', port=10000)
+
+threading.Thread(target=run_web, daemon=True).start()
 from telethon import Button, TelegramClient, events
 
 API_ID = 38374915
