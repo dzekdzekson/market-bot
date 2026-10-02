@@ -20,7 +20,7 @@ threading.Thread(target=run_web, daemon=True).start()
 from telethon import Button, TelegramClient, events
 
 API_ID = 38374915
-API_HASH = "c20886ebbc1c4bf991d58aad5da6968c"
+API_HASH = "c20886eb1e4bf991d58aad5da69685d"
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "8034343571:AAGbcFMX3sS13HNAxh2AEvzXnaBuGB3ra9c")
 target_channel = "@multimarket_uashop"
 contact_url = "t.me"
